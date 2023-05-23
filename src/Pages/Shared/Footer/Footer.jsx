@@ -2,7 +2,7 @@ import logo from '../../../assets/My project (1).png'
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 bg-base-200 text-base-content grid grid-cols-2 gap-x-16 lg:grid-cols-none ">
   <div>
     <img className='h-16 w-16' src={logo} alt="" />
     <p className='text-3xl font-bold'>Epic Fighter</p>
