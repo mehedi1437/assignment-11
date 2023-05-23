@@ -1,6 +1,9 @@
 import Swal from "sweetalert2";
+import useTitle from "../../TitleHook/useTitle";
 
 const AddToy = () => {
+
+  useTitle('Add a Toy')
   const handleAddToy = (event) => {
     event.preventDefault();
     const form = event.target;

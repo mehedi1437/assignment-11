@@ -4,8 +4,9 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext, useState } from "react";
 import { updateProfile } from "firebase/auth";
 import Swal from "sweetalert2";
+import useTitle from "../../TitleHook/useTitle";
 const Signup = () => {
-
+  useTitle('Sign Up')
   const [passError,setPassError] = useState('');
   const [success,setSuccess] = useState('')
     const {createUser,} = useContext(AuthContext)

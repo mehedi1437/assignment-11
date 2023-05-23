@@ -1,5 +1,8 @@
+import useTitle from "../../TitleHook/useTitle";
+
 /* eslint-disable react/no-unescaped-entities */
 const Blog = () => {
+  useTitle('BLog')
   return (
     <div className="mx-10 my-10">
       <h1 className="text-2xl mb-5">

@@ -4,11 +4,13 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaGoogle } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import useTitle from '../../TitleHook/useTitle';
 
 
 const Login = () => {
 
   const [passError,setPassError] = useState('');
+  useTitle('Login')
   const navigate = useNavigate()
   const location = useLocation();
   const from = location.state?.from?.pathname || '/'
@@ -67,7 +69,7 @@ const Login = () => {
 
 
 
-    
+
     return (
         <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row ">

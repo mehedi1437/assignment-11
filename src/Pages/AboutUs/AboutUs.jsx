@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import useTitle from "../../TitleHook/useTitle";
+
 const AboutUs = () => {
+    useTitle('About Us')
     return (
         <div className="text-center my-12 w-1/2 mx-auto ">
             <h1 className="text-2xl font-bold mb-4">About Us</h1>
